@@ -40,7 +40,7 @@ pip install easyocr opencv-python numpy matplotlib pandas json
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/patient-data-extraction.git
+git clone https://github.com/AKHIL-CHILAPALLY/patient-data-extraction.git
 cd patient-data-extraction
 ```
 
