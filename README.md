@@ -78,25 +78,21 @@ patient-data-extraction/
 ---
 
 ## Example Output
-```json
 {
-    "patient_name": "John Doe",
-    "dob": "01/01/1980",
-    "date": "02/12/2025",
+    "patient_name": "Akhil",
+    "dob": "lo",
+    "date": "Ie/o3/2025",
     "injection": "No",
-    "exercise_therapy": "Yes",
+    "exercise_therapy": "No",
     "difficulty_ratings": {
-        "bending": 5,
-        "putting_on_shoes": 3,
-        "sleeping": 2
+        "bending": null,
+        "putting_on_shoes": null,
+        "sleeping": null
     },
-    "pain_symptoms": {
-        "pain": "Yes",
-        "numbness": "No",
-        "tingling": "Yes"
-    }
-}
-```
+    "patient_changes": {
+        "since_last_treatment": "",
+        "since_start_of_treatment": "",
+        "last_3_days": ""
 
 ---
 
