@@ -15,18 +15,18 @@ This repository contains Jupyter Notebook files for extracting, processing, and 
 ## Overview
 This project automates the process of extracting structured patient information from scanned medical documents. It:
 - Detects and extracts text from predefined bounding boxes using OCR.
+- - Detects handwritten or printed numbers inside circles using computer vision.
 - Structures extracted data into JSON format.
-- Detects handwritten or printed numbers inside circles using computer vision.
 - Saves the processed data for further analysis.
 
 ---
 
 ## Features
+- **Bounding Box Detection**: Manually draw the region of interest bounding boxes and note the coordinates 
 - **OCR-based Text Extraction**: Uses EasyOCR to extract text from images.
-- **Bounding Box Detection**: Uses predefined coordinates to extract relevant fields.
 - **Circle Detection for Numeric Inputs**: Uses OpenCV to detect and read circled values.
 - **JSON Structuring**: Outputs extracted data in a structured JSON format.
-- **Medical Data Analysis**: Processes patient records for further insights.
+
 
 ---
 
@@ -53,10 +53,10 @@ cd patient-data-extraction
    jupyter notebook
    ```
 2. Navigate to the project folder and open the notebooks:
-   - `Boundingbox.ipynb` (To Define the regions to extract data from)
-   - `Schemas.ipynb` (Define JSON structure for output)
-   - `TableCreation.ipynb` (Process and store extracted data)
-   - `patient_analysis.ipynb` (Extract text using OCR from predefined regions and pushes the Data to DB)
+   - `Boundingbox.ipynb` (To Define the regions and extract the coordinates for the same)
+   - - `patient_analysis.ipynb` (Extract text using OCR from predefined regions and pushes the Data to DB)
+   - `Schemas.ipynb` (structured, consistent, and validated data representation)
+   - `TableCreation.ipynb` (structuring and creating tables in the database to store patient data. )
 3. Run the notebooks step by step to process an image and extract structured data.
 
 
@@ -65,9 +65,9 @@ cd patient-data-extraction
 ## Project Structure
 ```
 patient-data-extraction/
-│── Boundingbox.ipynb       # To Define the regions to extract data from 
-│── Schemas.ipynb           # Defines JSON structure for extracted data
-│── TableCreation.ipynb     # Processes and stores extracted data in structured format
+│── Boundingbox.ipynb       # To Define the regions and extract the coordinates
+│── Schemas.ipynb           # structured, consistent, and validated data representation
+│── TableCreation.ipynb     # structuring and creating tables in the database to store patient data. 
 │── patient_analysis.ipynb  # Detects bounding boxes and extracts text and store in DB
 │── example.png             # Sample input image
 │── output.json             # Extracted JSON data
@@ -112,18 +112,6 @@ patient-data-extraction/
 
 
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/patient-details-processing.git
-   cd patient-details-processing
-   ```
-2. Install dependencies:
-   ```bash
-   pip install opencv-python easyocr pymysql pyspark
-   ```
-
-## Usage
 
 
 
