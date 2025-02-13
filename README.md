@@ -53,27 +53,22 @@ cd patient-data-extraction
    jupyter notebook
    ```
 2. Navigate to the project folder and open the notebooks:
-   - `Boundingbox.ipynb` (Extract text using OCR from predefined regions)
+   - `Boundingbox.ipynb` (To Define the regions to extract data from)
    - `Schemas.ipynb` (Define JSON structure for output)
    - `TableCreation.ipynb` (Process and store extracted data)
-   - `patient_analysis.ipynb` (Analyze patient information)
+   - `patient_analysis.ipynb` (Extract text using OCR from predefined regions and pushes the Data to DB)
 3. Run the notebooks step by step to process an image and extract structured data.
 
-### Running the OCR Script (Optional)
-You can execute the script in a Python environment:
-```bash
-python process_patient_data.py
-```
 
 ---
 
 ## Project Structure
 ```
 patient-data-extraction/
-│── Boundingbox.ipynb       # Detects bounding boxes and extracts text
+│── Boundingbox.ipynb       # To Define the regions to extract data from 
 │── Schemas.ipynb           # Defines JSON structure for extracted data
 │── TableCreation.ipynb     # Processes and stores extracted data in structured format
-│── patient_analysis.ipynb  # Extracts Data and stores in DB
+│── patient_analysis.ipynb  # Detects bounding boxes and extracts text and store in DB
 │── example.png             # Sample input image
 │── output.json             # Extracted JSON data
 │── requirements.txt        # Dependencies for the project
