@@ -1,0 +1,44 @@
+{
+    "patient_name": "8aVi",
+    "dob": "13-#-95",
+    "date": "-5-Q4",
+    "injection": "YES",
+    "exercise_therapy": "YES (NO",
+    "difficulty_ratings": {
+        "bending_or_stooping": "0",
+        "Putting_on_shoes": "45",
+        "Sleeping": "2",
+        "Standing_for_an_hour": "2",
+        "Going_up_or_down_a_flight_of_stairs": "4",
+        "Walking_through_a_store": "?",
+        "Driving_for_an_hour": "0",
+        "Preparing_a_meal": "4",
+        "Yard_work": "1",
+        "Picking_up_items_off_the_floor": "16"
+    },
+    "patient_changes": {
+        "since_last_treatment": "Good",
+        "since_start_of_treatment": "bad",
+        "last_3_days": "Wo { st"
+    },
+    "pain_symptoms": {
+        "pain": "?",
+        "numbness": "?",
+        "tingling": "4",
+        "burning": "?",
+        "tightness": "?"
+    },
+    "medical_assistant_data": {},
+    "program_details": {},
+    "blood_pressure": "N/A",
+    "hr": "N/A",
+    "weight": "N/A",
+    "height": "N/A",
+    "spo2": "N/A",
+    "temperature": "N/A",
+    "blood_glucose": "N/A",
+    "respirations": "N/A",
+    "program_number": "N/A",
+    "treatment_number": "N/A",
+    "placement": "N/A"
+}
